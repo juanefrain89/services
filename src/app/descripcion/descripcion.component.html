@@ -1,0 +1,113 @@
+
+  <div class="arriba">
+        <p> Logo</p>
+        <div class="buscador">
+            <input type="text" placeholder="Buscar">
+        </div>
+
+        <div class="iniciarsesion">
+            <p>Inicio de sesion <span>Cuenta</span></p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="product-images">
+           
+            
+            <div class="main-image">
+               
+                <div class="service-illustration">
+                    <img class="sas"  src="./plomeria.png" style="width: 100%; height: 100%;" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="product-info">
+            <div class="size-selector">2 x $390</div>
+            
+            <div class="brand">PlomerosPro</div>
+            
+            <h1 class="product-title">Servicio completo de plomería residencial</h1>
+            
+            <div class="descripciones">
+                <div> 
+                <p>Atencion al cliente</p>
+                  <div class="stars">★★★★★</div>
+                  </div>
+                  <div> 
+                    <p>Calidad</p>
+                  <div class="stars">★★★★</div>
+                  </div>
+                   <div> 
+                    <p>Puntualidad</p>
+                  <div class="stars">★★</div>
+                  </div>
+            </div>
+            
+            <div class="price">$780.00</div>
+            
+            <button class="add-to-cart" onclick="addToCart()">Solicitar Servicio</button>
+
+           
+            
+            <div class="add-to-list" >
+                
+              <p [ngClass]="{'activo': tabactivo == 1 }" class="pp" (click)="handle(1)">Reseñas</p>  
+              <p  [ngClass]="{'activo': tabactivo == 2 }" class="pp" (click)="handle(2)"> Datos generales</p>
+            </div>
+            
+           <div *ngIf="tabactivo == 1" class="reseñas">
+      <h3 class="ti">Reseñas</h3>
+     
+        
+        <div style="display: none;" class="promedio-rating">
+            <div class="rating-numero">4.8</div>
+            <div>
+                <div class="rating-estrellas-grande">★★★★★</div>
+                <div class="rating-texto">Basado en 127 reseñas</div>
+            </div>
+        </div>
+
+        <div class="reseña-item">
+            <div class="reseña-header">
+                <span class="reseña-usuario">María González</span>
+                <span class="reseña-estrellas">★★★★★</span>
+            </div>
+            <div class="reseña-fecha">Hace 2 días</div>
+            <p class="reseña-texto">Excelente servicio de plomería. Llegaron puntualmente y resolvieron el problema de manera muy profesional. Los recomiendo ampliamente.</p>
+        </div>
+
+        <div class="reseña-item">
+            <div class="reseña-header">
+                <span class="reseña-usuario">Carlos Rodríguez</span>
+                <span class="reseña-estrellas">★★★★★</span>
+            </div>
+            <div class="reseña-fecha">Hace 1 semana</div>
+            <p class="reseña-texto">Muy satisfecho con el trabajo realizado. Personal capacitado y precios justos. Sin duda los contactaré nuevamente si necesito servicios de plomería.</p>
+        </div>
+
+        <div class="reseña-item">
+            <div class="reseña-header">
+                <span class="reseña-usuario">Ana López</span>
+                <span class="reseña-estrellas">★★★★☆</span>
+            </div>
+            <div class="reseña-fecha">Hace 2 semanas</div>
+            <p class="reseña-texto">Buen servicio en general. Resolvieron la fuga rápidamente, aunque el precio fue un poco más alto de lo esperado.</p>
+        </div>
+
+      
+    </div>
+   
+<div *ngIf="tabactivo == 2" class="datos-generales-card">
+    <h2>Datos Generales</h2>
+    <p><strong>Nombre de la empresa:</strong> Plomería Express S.A. de C.V.</p>
+    <p><strong>Rubro:</strong> Servicios de plomería y mantenimiento hidráulico</p>
+    <p><strong>Ubicación:</strong> Calle Ficticia 123, Col. Centro, Ciudad Inventada</p>
+    <p><strong>Teléfono:</strong> +52 55 1234 5678</p>
+    <p><strong>Correo:</strong> contactoplomeriaexpress.com</p>
+    <p><strong>Horario de atención:</strong> Lunes a viernes 8:00-18:00, sábado 9:00-14:00</p>
+     <p><strong>Clientes atendidos:</strong>Tacos doña lupe, Tanok, Amm, Gm</p>
+</div>
+
+        </div>
+    </div>
+

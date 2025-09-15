@@ -1,0 +1,109 @@
+
+  <div class="arriba">
+    <div> 
+  <fa-icon (click)="handlefiltros()" class="barra" [icon]="faBars"></fa-icon>
+   <div *ngIf="filtros" class="filtros">
+<div class="items">
+    <p>Categoria</p>
+   <select name="" id="">
+    <option value="">A</option>
+    <option value="">B</option>
+    <option value="">C</option>
+   </select>
+</div>
+
+    </div>
+</div>
+        <div class="buscador">
+            <input type="text" placeholder="Buscar">
+        </div>
+
+        <div class="iniciarsesion">
+            <p>Inicio de sesion <span>Cuenta</span></p>
+        </div>
+    </div>
+
+   
+
+    <div class="welcome-section">
+        <div class="welcome-content">
+            <h1 class="welcome-title">¡Bienvenido a ServiMart!</h1>
+            
+            <div class="services-container">
+                <div class="service-section">
+                    <div class="service-header">
+                        <h2 class="service-title">Plomeria</h2>
+                        <span>•</span>
+                      
+                    </div>
+                    
+                    <div class="service-illustration home-services">
+                        <div class="floating-walmart-spark spark-1">⭐</div>
+                        <div class="floating-walmart-spark spark-2">⭐</div>
+                       <img src="./plomeria.png" style="width: 100%; height: 100%;" class="plomeria" alt="">
+                    </div>
+                    
+                    <div class="service-description">Servicio a partir de 60 minutos</div>
+                    <div class="service-subtitle-text">Todos los servicios profesionales a precios bajos todos los días</div>
+                    
+                    <button (click)="enviar('plomeria')" class="cta-button">Comienza a solicitar</button>
+                </div>
+
+                <!-- Servicios Online -->
+                <div class="service-section">
+                    <div class="service-header">
+                        <h2 class="service-title">Jardineria</h2>
+                    </div>
+                    
+                    <div class="service-illustration online-services">
+                        <div class="floating-walmart-spark spark-3">⭐</div>
+                             <img src="mantenimiento-jardin.webp" style="width: 100%; height: 100%;" class="plomeria" alt="">
+                    </div>
+                    
+                    <div class="service-description">Millones de servicios desde 24 horas</div>
+                    <div class="service-subtitle-text">Consultoría y servicios digitales a todo México</div>
+                    
+                    <button (click)="enviar('jardineria')" class="cta-button">Comienza a solicitar</button>
+                </div>
+
+
+                 <div class="service-section">
+                    <div class="service-header">
+                        <h2 class="service-title">Transportes</h2>
+                        <span>•</span>
+                      
+                    </div>
+                    
+                    <div class="service-illustration home-services">
+                        <div class="floating-walmart-spark spark-1">⭐</div>
+                        <div class="floating-walmart-spark spark-2">⭐</div>
+                       <img src="./Larmex1.webp" style="width: 100%; height: 100%;" class="plomeria" alt="">
+                    </div>
+                    
+                    <div class="service-description">Servicio que transportan productos, muebles, carros etc</div>
+                    <div class="service-subtitle-text">Todos los servicios profesionales a precios bajos todos los días</div>
+                    
+                    <button (click)="enviar('transportacion')" class="cta-button">Comienza a solicitar</button>
+                </div>
+
+                <!-- Servicios Online -->
+                <div class="service-section">
+                    <div class="service-header">
+                        <h2 class="service-title">Jardineria</h2>
+                    </div>
+                    
+                    <div class="service-illustration online-services">
+                        <div class="floating-walmart-spark spark-3">⭐</div>
+                             <img src="https://images.unsplash.com/photo-1592750475338-74b7b21085ab?w=400&h=300&fit=crop" style="width: 100%; height: 100%;" class="plomeria" alt="">
+                    </div>
+                    
+                    <div class="service-description">Reparacion de telefonos</div>
+                    <div class="service-subtitle-text">Consultoría y servicios digitales a todo México</div>
+                    
+                    <button (click)="enviar('reparacion')" class="cta-button">Comienza a solicitar</button>
+                </div>
+
+
+            </div>
+        </div>
+    </div>

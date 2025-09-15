@@ -1,0 +1,71 @@
+
+  <div class="arriba">
+    <div> 
+  <fa-icon (click)="handlefiltros()" class="barra" [icon]="faBars"></fa-icon>
+   <div *ngIf="filtros" class="filtros">
+<div class="items">
+    <p>Categoria</p>
+   <select (change)="filtrar()" [(ngModel)]="filtrocategoria" name="" id="">
+    <option [value]="1">A</option>
+    <option [value]="2">B</option>
+    <option [value]="3">C</option>
+     <option [value]="4">Todos</option>
+   </select>
+</div>
+
+    </div>
+</div>
+        <div class="buscador">
+            <input type="text" placeholder="Buscar">
+        </div>
+
+        <div class="iniciarsesion">
+            <p>Inicio de sesion <span>Cuenta</span></p>
+        </div>
+    </div>
+   
+
+    <div class="products-container">
+        <!-- Producto 1: Crystal UHD -->
+        <div *ngFor="let item of paginacionopciones" class="product-card">
+            <div class="product-image">
+                <img [src]="item.imagen" >
+                <div class="badge badge-rebaja">Rebaja</div>
+            </div>
+            <div class="product-info">
+                <div class="price-section">
+                    <div class="current-price">{{item.precio}}</div>
+                    <span class="original-price">{{item.precioAnterior}}</span>
+                    <span class="savings">Ahorra {{item.ahorro}}</span>
+                </div>
+                <div class="installments">{{item.tipo}}</div>
+                <div class="brand">Categoria {{item.categoria}}</div>
+                <div class="product-name">{{item.descripcion}}</div>
+                <div class="rating">
+                    <div class="stars">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                    </div>
+                    <span class="rating-count">6</span>
+                </div>
+                <button (click)="cambiarruta()" class="add-btn">
+                    <span>+</span>
+                    Ver mas
+                </button>
+            </div>
+        </div>
+
+        
+
+       
+    </div>
+
+    <div class="navigation-arrows">
+        <div class="nav-arrow">←</div>
+        <div class="nav-arrow">→</div>
+    </div>
+
+  

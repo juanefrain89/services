@@ -1,0 +1,431 @@
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background-color: #f7f8fa;
+            color: #333;
+        }
+
+        .header {
+            background: linear-gradient(90deg, #0071ce 0%, #004c91 100%);
+            padding: 12px 0;
+        }
+
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            padding: 0 20px;
+            gap: 25px;
+        }
+
+        .logo {
+            color: #ffc220;
+            font-size: 2rem;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .logo::after {
+            content: "⭐";
+            font-size: 1.5rem;
+        }
+
+        .nav-menu {
+            display: flex;
+            gap: 30px;
+            color: white;
+            font-size: 0.95rem;
+        }
+
+        .nav-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            cursor: pointer;
+            padding: 8px 0;
+        }
+
+        .nav-item:hover {
+            color: #ffc220;
+        }
+
+        .search-container {
+            flex: 1;
+            max-width: 500px;
+            position: relative;
+        }
+
+        .search-box {
+            width: 100%;
+            padding: 12px 50px 12px 20px;
+            border: none;
+            border-radius: 25px;
+            font-size: 1rem;
+            outline: none;
+        }
+
+        .search-button {
+            position: absolute;
+            right: 8px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: #ffc220;
+            border: none;
+            border-radius: 50%;
+            width: 35px;
+            height: 35px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .account-section {
+            color: white;
+            text-align: right;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .welcome-section {
+            background: white;
+            padding: 30px 20px;
+        }
+
+        .welcome-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .welcome-title {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 30px;
+        }
+
+        .services-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .service-section {
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            border: 1px solid #e6e6e6;
+        }
+
+        .service-header {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .service-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #0071ce;
+        }
+
+        .service-subtitle {
+            color: #46c83a;
+            font-weight: 600;
+        }
+
+        .service-illustration {
+            width: 100%;
+            height: 200px;
+            margin: 20px 0;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+   
+
+        .service-icons {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .service-icon {
+            width: 60px;
+            height: 60px;
+            background: rgba(255,255,255,0.9);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+
+        .home-services .service-icon {
+            background: #0071ce;
+            color: white;
+        }
+
+        .online-services .service-icon {
+            background: rgba(255,255,255,0.95);
+            color: #1a237e;
+        }
+
+        .toolbox {
+            width: 80px;
+            height: 60px;
+            background: #0071ce;
+            border-radius: 8px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .toolbox::before {
+            content: "🔧";
+            font-size: 1.5rem;
+        }
+
+        .shopping-bags {
+            display: flex;
+            gap: 10px;
+        }
+
+        .bag {
+            width: 50px;
+            height: 60px;
+            border-radius: 4px 4px 8px 8px;
+        }
+
+        .bag-blue { background: #0071ce; }
+        .bag-green { background: #46c83a; }
+
+        .bag::before {
+            content: "🛍️";
+            font-size: 1.2rem;
+            display: block;
+            text-align: center;
+            margin-top: 8px;
+        }
+
+        .laptop-headphones {
+            position: relative;
+        }
+
+        .laptop {
+            width: 80px;
+            height: 50px;
+            background: #333;
+            border-radius: 4px;
+            position: relative;
+        }
+
+        .laptop::before {
+            content: "💻";
+            font-size: 2rem;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .headphones {
+            position: absolute;
+            top: -10px;
+            right: -20px;
+            font-size: 2rem;
+        }
+
+        .service-description {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 8px;
+        }
+
+        .service-subtitle-text {
+            color: #666;
+            font-size: 0.95rem;
+            margin-bottom: 25px;
+        }
+
+        .cta-button {
+            background: white;
+            border: 2px solid #333;
+            color: #333;
+            padding: 12px 25px;
+            border-radius: 25px;
+            font-size: 0.95rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background: #333;
+            color: white;
+        }
+
+        @media (max-width: 968px) {
+            .services-container {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            
+            .header-content {
+                flex-wrap: wrap;
+                gap: 15px;
+            }
+            
+            .nav-menu {
+                display: none;
+            }
+            
+            .search-container {
+                order: 3;
+                width: 100%;
+                max-width: none;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .service-section {
+                padding: 20px;
+            }
+            
+            .welcome-title {
+                font-size: 1.4rem;
+            }
+            
+            .service-title {
+                font-size: 1.2rem;
+            }
+        }
+
+        .floating-walmart-spark {
+            position: absolute;
+            color: #ffc220;
+            font-size: 1.5rem;
+            animation: sparkle 2s ease-in-out infinite;
+        }
+        .arriba{
+    width: 100%;
+    height: 75px;
+    background-color: #0071DC;
+    z-index: 12;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    left: 0;
+    box-sizing: border-box;
+}
+
+
+.buscador, .buscador input{
+    width: 100%;
+    height: 37px;
+    border-radius: 30px;
+    background-color: white;
+    border: none;
+    box-sizing: border-box;
+}
+
+
+.buscador input{
+    padding: 5px;
+    padding-left: 10px;
+}
+
+.buscador {
+    width: 35%;
+}
+
+
+
+
+.buscador input:focus{
+border: none;
+outline: none;
+}
+
+.iniciarsesion{
+    width: 110px;
+   
+}
+
+.barra{
+    font-size: 21px;
+    font-weight: 100 !important;
+    color: #d6e0f1;
+    cursor: pointer;
+
+}
+
+.iniciarsesion p{
+    color:#d6e0f1;
+}
+
+.iniciarsesion p span{
+    color: white;
+}
+
+
+.filtros{
+    width: 208px;
+    height: 178px;
+    bottom: -179px;
+border-radius: 0 0 12px 12px;
+    position: absolute;
+    background-color: white;
+   box-shadow: 1px 1px 13px 1px black
+}
+
+
+.items{
+    width: 100%;
+    padding: 10px;
+}
+
+.items select, .items input{
+    margin-top: 5px;
+    width: 90%;
+    border: 1px solid gainsboro;
+    border-radius: 2px;
+    height: 20px;
+}
+
+.header{
+    margin-top: 100px !important;
+}
+
+        .spark-1 { top: 20px; left: 20px; animation-delay: 0s; }
+        .spark-2 { top: 40px; right: 30px; animation-delay: 0.7s; }
+        .spark-3 { bottom: 30px; left: 40px; animation-delay: 1.4s; }
+
+        @keyframes sparkle {
+            0%, 100% { opacity: 0.3; transform: scale(1); }
+            50% { opacity: 1; transform: scale(1.2); }
+        }
