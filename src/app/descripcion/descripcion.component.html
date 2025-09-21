@@ -6,7 +6,7 @@
         </div>
 
         <div class="iniciarsesion">
-            <p>Inicio de sesion <span>Cuenta</span></p>
+           <img src="logo.png" class="logo" alt="">
         </div>
     </div>
     <div class="container">
@@ -53,6 +53,7 @@
                 
               <p [ngClass]="{'activo': tabactivo == 1 }" class="pp" (click)="handle(1)">Reseñas</p>  
               <p  [ngClass]="{'activo': tabactivo == 2 }" class="pp" (click)="handle(2)"> Datos generales</p>
+                <p  [ngClass]="{'activo': tabactivo == 3 }" class="pp" (click)="handle(3)">Servicios que maneja</p>
             </div>
             
            <div *ngIf="tabactivo == 1" class="reseñas">
@@ -95,6 +96,16 @@
         </div>
 
       
+    </div>
+
+    <div *ngIf="tabactivo == 3" class="reseñas">
+         <h3 class="ti">Servicios</h3>
+        <ul class="ser">
+    <li><span>Reparación de tuberías y fugas</span></li>
+    <li><span>Instalación de sistemas hidráulicos</span></li>
+    <li><span>Mantenimiento preventivo y correctivo</span></li>
+    <li><span>Desazolve y limpieza de drenajes</span></li>
+</ul>
     </div>
    
 <div *ngIf="tabactivo == 2" class="datos-generales-card">

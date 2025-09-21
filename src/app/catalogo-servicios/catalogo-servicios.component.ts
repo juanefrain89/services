@@ -46,14 +46,14 @@ handlefiltros(){
 }
 productos: any[] = [
   {
-    imagen: "plomeria1.webp",  
+    imagen: "logistica2.webp",  
     precio: "$15,299.00",
     precioAnterior: "$29,998.00",
     ahorro: "$14,699.00",
     meses: "Hasta 12 meses sin intereses",
     categoria: "a",
-    descripcion: "Servicio de plomería de emergencia 24h",
-    tipo: "plomeria"
+    descripcion: "Gestión integral de almacenes y control de inventarios.",
+    tipo: "logistica"
   },
   {
     imagen: "Larmex1.webp",
@@ -66,14 +66,14 @@ productos: any[] = [
     tipo: "transportacion"
   },
   {
-    imagen: "https://images.pexels.com/photos/4042809/pexels-photo-4042809.jpeg",
+    imagen: "man1.webp",
     precio: "$4,200.00",
     precioAnterior: "$7,500.00",
     ahorro: "$3,300.00",
     meses: "Hasta 3 meses sin intereses",
     categoria: "c",
-    descripcion: "Jardinería y cuidado de césped residencial",
-    tipo: "jardineria"
+    descripcion: "Pintura de interiores y exteriores para casas y oficinas.",
+    tipo: "mantenimiento"
   },
   {
     imagen: "reparacion1.webp",
@@ -86,14 +86,14 @@ productos: any[] = [
     tipo: "reparacion de telefonos"
   },
   {
-    imagen: "plomeria.png",
+    imagen: "logistica7.webp",
     precio: "$18,000.00",
     precioAnterior: "$25,000.00",
     ahorro: "$7,000.00",
     meses: "Hasta 12 meses sin intereses",
     categoria: "b",
-    descripcion: "Plomería residencial full servicio",
-    tipo: "plomeria"
+    descripcion: "Logística especializada para e-commerce y envíos a clientes",
+    tipo: "logistica"
   },
   {
     imagen: "mundanzas.webp",
@@ -106,14 +106,14 @@ productos: any[] = [
     tipo: "transportacion"
   },
   {
-    imagen: "https://images.pexels.com/photos/410140/pexels-photo-410140.jpeg",
+    imagen: "man3.webp",
     precio: "$5,800.00",
     precioAnterior: "$10,000.00",
     ahorro: "$4,200.00",
     meses: "Hasta 3 meses sin intereses",
     categoria: "a",
-    descripcion: "Diseño y jardinería decorativa",
-    tipo: "jardineria"
+    descripcion: "Reparación y ajuste de instalaciones eléctricas residenciales.",
+    tipo: "mantenimiento"
   },
   {
     imagen: "pantalla.webp",
@@ -126,14 +126,14 @@ productos: any[] = [
     tipo: "reparacion de telefonos"
   },
   {
-    imagen: "plomeria-pesada.webp",
+    imagen: "logistica4.webp",
     precio: "$14,000.00",
     precioAnterior: "$28,000.00",
     ahorro: "$14,000.00",
     meses: "Hasta 12 meses sin intereses",
     categoria: "c",
-    descripcion: "Plomería industrial pesada",
-    tipo: "plomeria"
+    descripcion: "Distribución nacional e internacional de mercancías",
+    tipo: "logistica"
   },
   {
     imagen: "https://images.pexels.com/photos/1402787/pexels-photo-1402787.jpeg",
@@ -153,7 +153,7 @@ productos: any[] = [
     meses: "Hasta 3 meses sin intereses",
     categoria: "b",
     descripcion: "Mantenimiento de jardines pequeños",
-    tipo: "jardineria"
+    tipo: "mantenimiento"
   },
   {
     imagen: "https://images.pexels.com/photos/788946/pexels-photo-788946.jpeg",
@@ -166,14 +166,14 @@ productos: any[] = [
     tipo: "reparacion de telefonos"
   },
   {
-    imagen: "https://images.pexels.com/photos/186077/pexels-photo-186077.jpeg",
+    imagen: "logistica5.webp",
     precio: "$17,000.00",
     precioAnterior: "$30,000.00",
     ahorro: "$13,000.00",
     meses: "Hasta 12 meses sin intereses",
     categoria: "a",
-    descripcion: "Servicios de plomería emergencia sin cita",
-    tipo: "plomeria"
+    descripcion: "Planeación y optimización de la cadena de suministro.",
+    tipo: "logistica"
   },
   {
     imagen: "camioneta.webp",
@@ -186,14 +186,14 @@ productos: any[] = [
     tipo: "transportacion"
   },
   {
-    imagen: "https://images.pexels.com/photos/235615/pexels-photo-235615.jpeg",
+    imagen: "man4.webp",
     precio: "$4,950.00",
     precioAnterior: "$9,500.00",
     ahorro: "$4,550.00",
     meses: "Hasta 3 meses sin intereses",
     categoria: "c",
-    descripcion: "Jardinería de interior y terrazas",
-    tipo: "jardineria"
+    descripcion: "Limpieza profunda y desinfección de espacios.",
+    tipo: "mantenimiento"
   },
   {
     imagen: "https://images.pexels.com/photos/248528/pexels-photo-248528.jpeg",
@@ -206,25 +206,25 @@ productos: any[] = [
     tipo: "reparacion de telefonos"
   },
   {
-    imagen: "limpieza.webp",
+    imagen: "logistica6.webp",
     precio: "$13,400.00",
     precioAnterior: "$25,800.00",
     ahorro: "$12,400.00",
     meses: "Hasta 12 meses sin intereses",
     categoria: "b",
-    descripcion: "Lavado y limpieza de tanques plomería",
-    tipo: "plomeria"
+    descripcion: "Logística personalizada para pequeñas y medianas empresas",
+    tipo: "logistica"
   },
  
   {
-    imagen: "https://images.pexels.com/photos/290714/pexels-photo-290714.jpeg",
+    imagen: "man5.webp",
     precio: "$3,900.00",
     precioAnterior: "$7,500.00",
     ahorro: "$3,600.00",
     meses: "Hasta 3 meses sin intereses",
     categoria: "a",
-    descripcion: "Paisajismo y jardinería profesional",
-    tipo: "jardineria"
+    descripcion: "Mantenimiento a maquinas",
+    tipo: "mantenimiento"
   },
   {
     imagen: "rep.webp",
@@ -235,7 +235,58 @@ productos: any[] = [
     categoria: "b",
     descripcion: "Reparación de software y datos móviles",
     tipo: "reparacion de telefonos"
-  }
+  },
+  {
+  imagen: "https://images.pexels.com/photos/4427611/pexels-photo-4427611.jpeg",
+  precio: "$9,500.00",
+  precioAnterior: "$15,000.00",
+  ahorro: "$5,500.00",
+  meses: "Hasta 6 meses sin intereses",
+  categoria: "a",
+  descripcion: "Asesoría legal en contratos civiles",
+  tipo: "servicios-legales"
+},
+{
+  imagen: "https://images.pexels.com/photos/4427554/pexels-photo-4427554.jpeg",
+  precio: "$18,200.00",
+  precioAnterior: "$30,000.00",
+  ahorro: "$11,800.00",
+  meses: "Hasta 12 meses sin intereses",
+  categoria: "b",
+  descripcion: "Defensa en juicios laborales",
+  tipo: "servicios-legales"
+},
+{
+  imagen: "https://images.pexels.com/photos/5668473/pexels-photo-5668473.jpeg",
+  precio: "$7,800.00",
+  precioAnterior: "$14,000.00",
+  ahorro: "$6,200.00",
+  meses: "Hasta 3 meses sin intereses",
+  categoria: "c",
+  descripcion: "Consultoría en derecho familiar",
+  tipo: "servicios-legales"
+},
+{
+  imagen: "https://images.pexels.com/photos/4427615/pexels-photo-4427615.jpeg",
+  precio: "$22,500.00",
+  precioAnterior: "$40,000.00",
+  ahorro: "$17,500.00",
+  meses: "Hasta 12 meses sin intereses",
+  categoria: "b",
+  descripcion: "Representación legal en derecho mercantil",
+  tipo: "servicios-legales"
+},
+{
+  imagen: "https://images.pexels.com/photos/5668477/pexels-photo-5668477.jpeg",
+  precio: "$12,000.00",
+  precioAnterior: "$20,500.00",
+  ahorro: "$8,500.00",
+  meses: "Hasta 9 meses sin intereses",
+  categoria: "a",
+  descripcion: "Tramitación de amparos y recursos legales",
+  tipo: "servicios-legales"
+}
+
 ];
 opciones : any[]=[]
   ngOnInit(): void {
@@ -249,13 +300,15 @@ opciones : any[]=[]
 console.log(this.mensaje);
 
 if (this.mensaje == "jardineria") {
-  this.opciones = this.productos.filter(e => e.tipo == "jardineria")
+  this.opciones = this.productos.filter(e => e.tipo == "jardineria" || e.tipo == "mantenimiento")
   
 }else if ( this.mensaje == "plomeria"){
-  this.opciones =this.productos.filter(e => e.tipo == "plomeria")
+  this.opciones =this.productos.filter(e => e.tipo == "plomeria" || e.tipo == "logistica" )
 }else if (this.mensaje == "transportacion"){
-    this.opciones =this.productos.filter(e => e.tipo == "transportacion")
-
+    this.opciones =this.productos.filter(e => e.tipo == "transportacion" )
+}
+else if (this.mensaje == "servicios-legales") {
+    this.opciones =this.productos.filter(e => e.tipo == "servicios-legales" )
 }
 this.paginacionopciones = this.opciones
       })
